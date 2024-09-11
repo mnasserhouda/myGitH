@@ -1,0 +1,60 @@
+<html>
+	<head>
+		<title>Form to apply for a job</title>
+		<style>
+		       lable { color:DarkSlateGray;
+				font-size:24px;}
+				 input{color:DimGray;
+				 }
+				 h1 { background:DarkCyan;
+				 color:white;
+				 }
+				 body{background-color:Ivory;}
+				 
+		</style>
+	</head>
+	<body>
+	<center>
+		<h1>  <br>Apply for a job <br><br></h1><br><br><br></center>
+		<fieldset>
+		<form action="action_page.php" method="post">
+	
+			<lable>  *Full name </lable><br>
+			<input type="text" name="fullname" required maxlength="40">
+			
+		  <br><br>  <lable> *Brith date </lable><br>
+			 <input type="date" name="birthdate" min="1980-12-30" required><br><br>
+			
+			<br><br><lable>Country</lable>
+			<br><select name="country">
+			<option name="KSA">Saudi Arabia </option>
+			<option name="Kuwait"> Kuwait</option>
+			<option name="United Arab Emirates"> United Arab Emirates</option>
+			<option name="Qatar"> Qatar</option>
+			<option name="Bahrain"> Bahrain</option>
+			</select><br><br>
+			
+			<lable>Experiences</lable><br>
+			<textarea rows="10" cols="20" name="exp"></textarea><br><br>
+			
+			<lable>Sex</lable><br>
+			<input type="radio" name="sex">male <br>
+			<input type="radio" name="sex">female <br><br>
+			
+			<lable>  Languages</lable><br>
+			<input type="checkbox" name="lang">English<br>
+		     <input type="checkbox"name="lang">Arabic<br>
+			   <input type="checkbox"name="lang">Japanese<br>
+			   <input type="checkbox"name="lang">French<br><br>
+			   
+			   <lable>*E-mail</lable><br>
+			   <input type="email" name="email" required><br><br>
+			  
+			  <lable>*Phone number</lable><br>
+			   <input type="tel" required name="telnum">
+			   <br><br><br>
+			   <input type="submit">
+			  </fieldset>
+		</body>	   
+</form> 
+</html>
